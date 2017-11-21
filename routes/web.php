@@ -14,4 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::middleware('role:editor')->get('/home', 'HomeController@index');
+// Route::middleware('role:editor')->get('/home', 'HomeController@index'); // iz prethodnog zadatka
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
