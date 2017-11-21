@@ -14,3 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::middleware('role:editor')->get('/home', 'HomeController@index');
