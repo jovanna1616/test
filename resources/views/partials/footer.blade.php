@@ -1,0 +1,1 @@
+Hello, You are logged in as  {{ Auth::user()->email }}
