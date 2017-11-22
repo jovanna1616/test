@@ -1,1 +1,1 @@
-Hello, You are logged in as  {{ Auth::user()->email }}
+<p>Lorem ipsum dolor sit amet</p>
