@@ -97,11 +97,9 @@
                             <div class="col-md-6">
                                 <select name="country" required>
                                     <option value=""></option>
-
-                                    @foreach ($countries as $country)
+                                    @foreach (config('countries') as $country)
                                         <option value="{{ $country }}">{{ $country }}</option>
                                     @endforeach
-
                                 </select>
 
                                 @if ($errors->has('country'))
